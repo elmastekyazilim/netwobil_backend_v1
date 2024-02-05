@@ -4,7 +4,7 @@
   "description": "our very first MERN app",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Full Stack Niraj",
   "license": "ISC",
