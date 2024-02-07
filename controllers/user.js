@@ -104,7 +104,7 @@ exports.getData = async (req, res) => {
 
   const userData=await User.findById(req.user._id);
   console.log(userData);
-  res.json({ success: true, deviceId: userData.device ,fullname: userData.fullname, mqttUrl: userData.mqttUrl});
+  res.json({ success: true, deviceId: userData.device ,fullname: userData.fullname, mqttUrl: userData.mqttUrl,email:userData.email});
 
 };
 
