@@ -16,7 +16,7 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.json({ success: true, message: 'Welcome to backend zone merhaba!' });
+  res.json({ success: true, message: 'Welcome to backend zone hello!' });
 });
 
 app.listen(8000, () => {
