@@ -9,7 +9,7 @@ exports.createUser = async (req, res) => {
   if (!isNewUser)
     return res.json({
       success: false,
-      message: 'This email is already in use, try sign-in',
+      message: 'Bu E-Posta Kullanımda',
     });
   const mqttUrl=process.env.MQTT_URI;
   console.log(mqttUrl);
@@ -38,7 +38,7 @@ exports.userSignIn = async (req, res) => {
   if (!isMatch)
     return res.json({
       success: false,
-      message: 'email / password does not match!',
+      message: 'E-Posta ya da Şifre Hatalı',
     });
 
   const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
